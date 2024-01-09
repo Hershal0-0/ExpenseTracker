@@ -7,8 +7,10 @@
     "start": "node server",
     "server": "nodemon server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\" "
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
 
+    "docker-build-client":"NPM_COFIG_PRODUCTION=false cd client && npm install && npm run build",
+    "docker-build-webapp":" concurrently \"npm run docker-build-client\" \"npm run server\" "
   },
   "repository": {
     "type": "git",

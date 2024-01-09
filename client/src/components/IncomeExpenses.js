@@ -11,13 +11,13 @@ const IncomeExpenses = () => {
             <div>
                 <h4>Income</h4>
                 <p className="money plus" >
-                    +${numberWithCommas(posTotal)}
+                    +Rs.{numberWithCommas(posTotal)}
                 </p>
             </div>
             <div>
                 <h4>Expense</h4>
                 <p className="money minus" >
-                    -${numberWithCommas(negTotal)}
+                    -Rs.{numberWithCommas(negTotal)}
                 </p>
             </div>
         </div>

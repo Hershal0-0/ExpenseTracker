@@ -8,7 +8,7 @@ const Transaction = ({transaction}) => {
     const amount=Math.abs(transaction.amount)
     return (
         <li className={transaction.amount<0 ? "minus" :"plus"}>
-        {transaction.text} <span>{sign}${numberWithCommas(amount)}</span> 
+        {transaction.text} <span>{sign}Rs.{numberWithCommas(amount)}</span> 
         <button
         onClick={()=> deleteTransaction(transaction._id) }
         className="delete-btn">x</button>

@@ -17,6 +17,8 @@ function App() {
       <TransactionList />
       <AddTransaction />
       </div>
+
+      {/* adsad */}
     </GlobalProvider>
   );
 }
